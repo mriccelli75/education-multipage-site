@@ -83,6 +83,7 @@ img {
     padding: 1rem 2rem;
     border: 1px solid transparent;
     font-weight: 500;
+    transition: var(--transition);
 }
 .btn:hover {
     background: transparent;
@@ -205,4 +206,31 @@ section.categories {
 }
 .category p {
     font-size: 0.85rem;
+}
+/* =================== Popular Courses =========== */
+.courses {
+    margin-top: 10rem;
+}
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.courses__container  .course {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.courses__container  .course:hover {
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid var(--color-bg1);
+}
+
+.courses__container  .course .course__info {
+    padding: 2rem;
+}
+.courses__container  .course .course__info p {
+    margin: 1.2rem 0 2rem;
 }
